@@ -7,5 +7,6 @@ log = logging.getLogger(__name__)
 
 
 class User(object):
-    def __init__(self):
+    def __init__(self, username):
+        self.username = username  # type: str
         self.decks = []  # type: List[Deck]
