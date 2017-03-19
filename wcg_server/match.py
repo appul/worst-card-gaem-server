@@ -9,4 +9,7 @@ log = logging.getLogger(__name__)
 
 class Match(object):
     def __init__(self, users: List[User]):
-        self.player = [Player(user) for user in users]  # type: List[Player]
+        self.players = []  # type: List[Player]
+
+        for user in users:
+            self.players.append(Player(user))
