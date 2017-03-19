@@ -1,7 +1,7 @@
 import logging
 from typing import List
 
-from wcg_server.Player import Player
+from wcg_server.player import Player
 from wcg_server.user import User
 
 log = logging.getLogger(__name__)
