@@ -1,11 +1,11 @@
 import logging
 from typing import List
 
-from wcg_server.deck import Deck
+from wcg_server.card import Card
 
 log = logging.getLogger(__name__)
 
 
-class User(object):
+class Deck(object):
     def __init__(self):
-        self.decks = []  # type: List[Deck]
+        self.cards = []  # type: List[Card]
